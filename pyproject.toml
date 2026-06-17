@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-report=term-missing"
+
+[project]
+name = "vehicle-management"
+version = "0.1.0"
+description = "Vehicle Management System"
+dependencies = ["pytest==7.4.3"]
